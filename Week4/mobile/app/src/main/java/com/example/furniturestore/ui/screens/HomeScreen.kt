@@ -16,8 +16,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowForwardIos
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
@@ -44,6 +44,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.furniturestore.MainViewModel
 import com.example.furniturestore.R
+import com.example.furniturestore.common.enum.LoadStatus
 import com.example.furniturestore.model.Task
 import com.example.furniturestore.ui.theme.FurnitureStoreTheme
 
@@ -64,6 +65,7 @@ fun HomeScreenPreview() {
         )
     }
 }
+
 @Composable
 fun HomeScreen(
     navController: NavHostController,
@@ -112,34 +114,66 @@ fun HomeScreen(
             }
         }
     ) { paddingValues ->
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues)
-                .background(Color.White)
-                .padding(16.dp)
-        ) {
-            items(taskList) { item ->
-                TaskItem(item)
-                Spacer(modifier = Modifier.height(8.dp))
+
+        when (state.status) {
+            is LoadStatus.Loading -> {
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressIndicator(color = Color(0xFF2196F3))
+                }
+            }
+            is LoadStatus.Success -> {
+                if(taskList.isEmpty() ){
+                    Column( modifier = Modifier
+                        .fillMaxSize()
+                        .padding(paddingValues)) {
+                        Empty()
+                    }
+                }else{
+                    LazyColumn(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(paddingValues)
+                            .background(Color.White)
+                            .padding(16.dp)
+                    ) {
+                        items(taskList) { item ->
+                            TaskItem(item, navController)
+                            Spacer(modifier = Modifier.height(8.dp))
+                        }
+
+                    }
+                }
+            } else ->{
+                Column( modifier = Modifier
+                        .fillMaxSize()
+                        .padding(paddingValues)) {
+                        Empty()
+                    }
+                }
             }
 
-        }
     }
 }
+
 @Composable
-fun TaskItem(task:Task) {
+fun TaskItem(task:Task, navController: NavHostController) {
     val priorityColor = when (task.priority) {
         "High" -> Color(0xFFFFCDD2)
         "Medium" -> Color(0xFFFFF9C4)
         "Low" -> Color(0xFFC8E6C9)
         else -> Color.White
     }
-
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth()
+            .clickable {
+                navController.navigate("detail?id=${task.id}")
+            },
         shape = RoundedCornerShape(12.dp),
         elevation = CardDefaults.cardElevation(4.dp),
+
     ) {
         Row(
             modifier = Modifier
