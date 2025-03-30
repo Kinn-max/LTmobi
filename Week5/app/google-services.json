@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "511915091238",
+    "project_id": "hihi-d0b2d",
+    "storage_bucket": "hihi-d0b2d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511915091238:android:7983a1ce20aeeb7cbdcde7",
+        "android_client_info": {
+          "package_name": "com.kinn.authfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511915091238-2o33i4g888qravc1odhumuaot4rnaiq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kinn.authfirebase",
+            "certificate_hash": "63c9a6dab39e93e87e279c260fb9deb2bc67fd38"
+          }
+        },
+        {
+          "client_id": "511915091238-u83k4oh9e3e9821lav9hjfgne5bj453e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLsHJUE5FQHcFn2ppHTmvhoyP64JPccrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511915091238-u83k4oh9e3e9821lav9hjfgne5bj453e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
