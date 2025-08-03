@@ -10,52 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbe940dd-eb46-4ff8-ad07-9a4564c06ece" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/calculator/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/androidTest/java/com/kinn/calculator/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/app/src/test/java/com/kinn/calculator/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/app/src/main/java/com/kinn/authfirebase/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/app/src/main/java/com/kinn/authfirebase/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/kinn/calculator/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +39,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Kinn-max/LTmobi.git",
-    "accountId": "cf5c086e-d842-4840-a61c-260ef266c3e9"
+    "accountId": "7db37d33-114d-4af9-9cbc-1061ecca07ca"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -213,6 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743836205958</updated>
       <workItem from="1743839470540" duration="24000" />
+      <workItem from="1745234129504" duration="165000" />
     </task>
     <servers />
   </component>

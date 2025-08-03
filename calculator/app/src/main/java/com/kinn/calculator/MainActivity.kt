@@ -2,6 +2,7 @@
 package com.kinn.calculator
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -119,7 +120,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                 .weight(1f)
                 .padding(4.dp)
 
-            // Row 1
+
             Row(modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = {
                     if (isNewNumber) displayText = "7" else displayText += "7"
@@ -143,7 +144,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                 }, modifier = buttonModifier) { Text("×") }
             }
 
-            // Row 2
+
             Row(modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = {
                     if (isNewNumber) displayText = "4" else displayText += "4"
@@ -167,7 +168,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                 }, modifier = buttonModifier) { Text("-") }
             }
 
-            // Row 3
+
             Row(modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = {
                     if (isNewNumber) displayText = "1" else displayText += "1"
@@ -191,7 +192,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                 }, modifier = buttonModifier) { Text("+") }
             }
 
-            // Row 4
+
             Row(modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = {
                     if (isNewNumber) displayText = "0" else displayText += "0"
@@ -221,13 +222,14 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
                 }, modifier = buttonModifier) { Text("÷") }
             }
 
-            // Row 5
+
             Row(modifier = Modifier.fillMaxWidth()) {
                 Spacer(modifier = buttonModifier)
                 Spacer(modifier = buttonModifier)
                 Spacer(modifier = buttonModifier)
                 Button(onClick = {
                     if (operation.isNotEmpty()) {
+
                         secondNumber = displayText.split(" ").last()
                         displayText = calculate()
                         operation = ""
